@@ -7,10 +7,12 @@
     "gulp-sass": "^5.1.0"
   },
   "scripts": {
+    "dev": "gulp watch",
     "build": "gulp",
     "teste": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "gulp-imagemin": "^7.1.0",
     "sass": "^1.75.0"
   }
 }
