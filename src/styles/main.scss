@@ -3,6 +3,7 @@
 @use 'hero';
 @use 'shows';
 @use 'plans';
+@use 'avialable-devices';
 
 @font-face {
     font-family: Avenir;
@@ -83,6 +84,50 @@ body {
     margin-top: 1vw;
     margin-bottom: 5px;
     cursor: pointer;
+}
+
+.image-text-section {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+    }
+    
+    &__title__desc {
+        padding: 0 2vw;
+        text-align: justify;
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    &--image-full-width {
+        display: block;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        &__title__desc {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: calc(50% - 5.6vw);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 }
 
 
